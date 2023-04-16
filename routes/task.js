@@ -9,5 +9,4 @@ router.route("/:id")
 .put(isAuthticated,updateTask)
 .delete(isAuthticated,deleteTask)
 
-
 export default router;  

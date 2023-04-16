@@ -4,9 +4,9 @@ import mongoose from "mongoose";
  {
     mongoose.connect(process.env.MONGO_URL,{
         dbName:"nodeApi"
-    }).then(()=>
+    }).then((c)=>
     {
-        console.log("Database is connected")
+        console.log(`Database is connecetd on ${c.connection.host}`)
     }).catch((errr)=>
     {
         console.log(errr)
