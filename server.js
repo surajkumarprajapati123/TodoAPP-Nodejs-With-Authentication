@@ -4,7 +4,7 @@ import { mongdbconnection} from "./data/database.js";
 mongdbconnection();
 app.get("/",(req,res)=>
 {
-    res.send("akgba;gab;odf")
+    res.send("nice working")
 })
 
 app.listen(process.env.PORT,()=>
